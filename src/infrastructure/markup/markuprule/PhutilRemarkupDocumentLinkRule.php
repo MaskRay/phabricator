@@ -94,7 +94,7 @@ final class PhutilRemarkupDocumentLinkRule extends PhutilRemarkupRule {
         'href' => $link,
         'class' => 'remarkup-link',
         'target' => $target,
-        'rel' => 'noreferrer',
+        'rel' => 'ugc nofollow noreferrer',
       ),
       $name);
   }
