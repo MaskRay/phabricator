@@ -472,6 +472,22 @@ final class PhabricatorStandardPageView extends PhabricatorBarePageView
       array(
         $developer_warning,
         $header_chrome,
+
+        phutil_tag(
+          'div',
+          array(
+            'style' => 'background-color: crimson; color: white; text-align: center; padding: 0.3rem 0;'
+          ),
+          phutil_tag(
+            'h1',
+            array(),
+            array(
+              pht('Please use '),
+              phutil_tag('a', array('style' => 'color:#ccc', 'href' => 'https://github.com/llvm/llvm-project/pulls'), pht('GitHub pull requests')),
+              pht(' for new patches. '),
+              phutil_tag('a', array('style' => 'color:#ccc', 'href' => 'https://discourse.llvm.org/t/update-on-github-pull-requests/71540'), pht('Phabricator shutdown timeline')),
+            ))),
+
         phutil_tag(
           'div',
           array(
