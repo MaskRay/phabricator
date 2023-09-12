@@ -155,7 +155,7 @@ final class HarbormasterBuildUnitMessage
   }
 
   public function getProperty($key, $default = null) {
-    return idx($this->properties, $key, $default);
+    return is_null($this->properties) ? $default : idx($this->properties, $key, $default);
   }
 
   public function setProperty($key, $value) {
