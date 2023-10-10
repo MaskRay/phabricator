@@ -129,6 +129,9 @@ final class DifferentialRevisionEditEngine
 
     $is_create = $this->getIsCreate();
     $is_update = ($diff && !$is_create);
+    if ($is_create) {
+      throw new Exception('New revision creation is disabled. Please use GitHub Pull Requests instead.');
+    }
 
     $fields = array();
 
