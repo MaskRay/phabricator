@@ -484,7 +484,7 @@ final class PhabricatorStandardPageView extends PhabricatorBarePageView
             array(
               pht('Please use '),
               phutil_tag('a', array('style' => 'color:#ccc', 'href' => 'https://github.com/llvm/llvm-project/pulls'), pht('GitHub pull requests')),
-              pht(' for new patches. '),
+              pht(' for new patches. Avoid migrating existing patches. '),
               phutil_tag('a', array('style' => 'color:#ccc', 'href' => 'https://discourse.llvm.org/t/update-on-github-pull-requests/71540'), pht('Phabricator shutdown timeline')),
             ))),
 
